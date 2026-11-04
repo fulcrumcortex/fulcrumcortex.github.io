@@ -115,7 +115,7 @@
       ],
       [
         "End the week with a repeatable method",
-        "Write down a small procedure that produced a useful result. Include the source of truth, the action, the scope and the evidence of completion. The public Sidekick library provides examples you can read and adapt to the tools you actually have.\n\nThe Cortex documentation now includes more than 100 Chat task guides and a visual settings tour. Screenshots use the real local interface with fictional test accounts and simulated service states; they explain controls without exposing customer information or pretending that a demo is a live integration test."
+        "Write down a small procedure that produced a useful result. Include the source of truth, the action, the scope and the evidence of completion. The public Sidekick library provides examples you can read and adapt to the tools you actually have.\n\nThe Cortex documentation now includes more than 100 Chat task guides and a visual settings tour. The screenshot tour covers account settings, Sidekicks, groups, voice controls and tool permissions."
       ]
     ],
     "links": [
