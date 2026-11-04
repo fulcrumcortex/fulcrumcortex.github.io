@@ -1,0 +1,136 @@
+[
+  {
+    "slug": "what-sidekick-skills-do",
+    "title": "What a Sidekick skill actually gives your AI teammate",
+    "summary": "A practical distinction between instructions, tools and verified outcomes, with examples from the public Fulcrum skill library.",
+    "platform": "Medium",
+    "sections": [
+      [
+        "Start with a method, not a job title",
+        "Calling an assistant a sales expert says little about the work it should perform. A useful skill describes a method: which information to read, what decision to make, which actions fit the request and how to check the result. That makes the work easier to explain and review.\n\nIn Fulcrum Cortex, a Sidekick is an AI teammate. Cortex is the execution layer for business, and Sessions is the orchestrator for humans and AI working together. Skills help a teammate approach a particular kind of task consistently. They do not replace the user\u2019s judgement about the intended outcome."
+      ],
+      [
+        "A customer follow-up is a useful example",
+        "Consider an enquiry that needs a reply. A weak request says, \u201cHandle this lead.\u201d A more useful procedure identifies the contact, reads the latest conversation, checks what has already been promised and prepares the next action. If the user asked for a draft, the result stays a draft. If a send was already authorised, the workflow checks the intended mailbox and recipient, sends through the supported connection and verifies the saved result.\n\nThat distinction prevents a procedure from silently expanding the assignment. A good skill should preserve the scope the user chose rather than stopping at every routine step or treating every task as permission to act everywhere."
+      ],
+      [
+        "Instructions and access are separate",
+        "A skill cannot make an unavailable integration appear. The assistant still needs an actual tool connection, the appropriate account and a saved permission for the requested operation. Cortex Chat exposes these layers through connected-app settings and tool permissions. Private and group contexts can have different policies.\n\nFor email, reading a thread, creating a draft and sending a message are different capabilities. An assistant may be able to help with one and be intentionally unable to perform another. Diagnose the missing layer rather than granting every tool to clear one error."
+      ],
+      [
+        "Ask for evidence appropriate to the task",
+        "A message saying a meeting was booked is not the same as a confirmed destination event. A source-code edit is not the same as a release verified live. The relevant evidence depends on the outcome: a saved document, a contact activity, a sent item, a booking confirmation or the deployed revision.\n\nA timeout is also ambiguous. Before retrying a send, booking or payment, inspect its destination. The first attempt may have succeeded even though the response did not reach the conversation. A reusable procedure should make that reconciliation part of the method."
+      ],
+      [
+        "Try one focused skill",
+        "The public Fulcrum starter library contains 17 skills across nine roles. It covers coordination, software changes, releases, CRM follow-up and cleanup, voice-agent preparation, call review, inbox work, bookings, meeting actions, documents, file sharing, Wallet checks, campaigns, delivery planning, CAD briefs and private-message drafts.\n\nStart with one task you can judge. Read its SKILL.md, supply the relevant context and ask for a result you can verify. The library\u2019s Fulcrum Code marketplace installation and discovery were tested in an isolated environment. That packaging test does not claim that every reader\u2019s CRM, calling or payment connection is already configured."
+      ]
+    ],
+    "links": [
+      [
+        "Read the Sidekick skill library",
+        "https://github.com/fulcrumcortex/sidekicks-skills"
+      ],
+      [
+        "See the Sidekick roles",
+        "https://fulcrumcortex.com/sidekicks"
+      ],
+      [
+        "Use the Cortex Chat guides",
+        "https://fulcrumcortex.github.io/documentation/cortex-chat/"
+      ]
+    ]
+  },
+  {
+    "slug": "enquiry-to-next-action",
+    "title": "Turn a customer enquiry into an accountable next action",
+    "summary": "A concrete workflow for combining inbox context, CRM follow-up and verification without inventing customer commitments.",
+    "platform": "LinkedIn",
+    "sections": [
+      [
+        "Define the useful result",
+        "A customer enquiry often starts in email or chat and finishes somewhere else: a CRM task, a draft reply, a booking or a handoff to another person. The difficult part is keeping the context and the next action together. An AI teammate can help, but the workflow should make its result observable.\n\nStart by describing what you actually want. \u201cRead this enquiry and draft a reply with the agreed next step\u201d is a bounded task. \u201cSend the approved reply and log the follow-up\u201d is a different task with an external action. A good assistant should follow the authority you gave, without assuming more or repeatedly asking for the same approval."
+      ],
+      [
+        "Read the relationship before drafting",
+        "First identify the intended person and organisation. A stable email or record link is more reliable than a display name alone. Read the relevant thread and recent activity, including any open task or recent send that could make another follow-up a duplicate.\n\nThe assistant should distinguish a customer\u2019s question, a colleague\u2019s suggestion and an actual commitment. If a price, deadline or availability claim could have changed, use its current authoritative source. Do not fill a gap with plausible-sounding detail."
+      ],
+      [
+        "Choose the next step deliberately",
+        "A useful next step has an action and an owner. It might be answering an open question, preparing a proposal, requesting missing information or offering an existing booking link. A note saying \u201cfollow up later\u201d is less useful when nobody can tell who should do it or when.\n\nAvoid inventing a meeting slot. Use verified availability or the intended booking page. If the customer has not accepted a proposal or confirmed a time, record that uncertainty rather than moving a deal to a stage that implies more progress than occurred."
+      ],
+      [
+        "Check the account and the tools",
+        "In Cortex Chat, the visible email surface and the Sidekick\u2019s Email permissions are separate. The active mailbox matters, as do the saved read, draft or send allowance and the individual tools. A private assistant context can also differ from a shared group context.\n\nInspect the actual connection and policy before concluding that an assistant can act. If the task only needs a draft, there is no need to enable sending just to make the workflow appear more complete."
+      ],
+      [
+        "Verify the destination",
+        "After an authorised send, inspect the sent item or supported send result. After creating a task, check its owner, date and contact. After a booking, inspect its confirmed event and invitation. A confident summary is useful communication, but it is not the destination evidence.\n\nIf a request times out, reconcile the existing result before retrying. This prevents a technical uncertainty from turning into duplicate customer contact. The final handoff should say what was drafted, saved or sent and identify any remaining decision."
+      ],
+      [
+        "Make the method reusable",
+        "The Fulcrum CRM follow-up skill captures this procedure in a readable file. It is one of the public starter skills, alongside data-quality review, inbox triage, booking setup and meeting actions. These procedures help the team repeat a useful method; they do not grant access to a customer database on installation.\n\nBegin with a small real task you are authorised to perform, compare the result with the source material and refine the procedure when a concrete failure shows what is missing."
+      ]
+    ],
+    "links": [
+      [
+        "Read the CRM follow-up skill",
+        "https://github.com/fulcrumcortex/sidekicks-skills/blob/main/plugins/fulcrum-sidekicks/skills/fulcrum-crm-follow-up/SKILL.md"
+      ],
+      [
+        "Explore Fulcrum CRM",
+        "https://fulcrumcrm.app/"
+      ],
+      [
+        "Read the Chat Email-access guide",
+        "https://fulcrumcortex.github.io/documentation/cortex-chat/email-read-draft-send/"
+      ]
+    ]
+  },
+  {
+    "slug": "first-week-cortex-chat",
+    "title": "A practical first week with Cortex Chat",
+    "summary": "Set up one useful assistant workflow, understand the settings and check results before expanding to more products.",
+    "platform": "Substack",
+    "sections": [
+      [
+        "Day one: learn the boundaries",
+        "Open Cortex Chat and confirm the Fmail identity and workspace you intend to use. Locate Sidekicks, People & groups and Connected Apps. These sections represent different contexts rather than interchangeable conversation windows.\n\nChoose a Sidekick and inspect its name, role and status before sending a request. If the Sessions connection is unavailable, resolve that layer first. A successful sign-in does not establish that every assistant runtime and external service is ready."
+      ],
+      [
+        "Day two: give one clear job",
+        "Create a focused assistant or work with an existing one. The Skills and job description should explain the outcome, the information to use and any boundaries that change its decisions. Avoid putting private customer examples or credentials into a reusable role.\n\nTry a task such as reviewing an enquiry and preparing a reply without sending. State what counts as finished and inspect the result. A small task gives you a baseline for later troubleshooting; connecting every product at once makes it harder to tell what is working."
+      ],
+      [
+        "Day three: understand settings",
+        "Conversation settings contain the default Sidekick preference, voice configuration, tool access and the local chat background. They do not all save in the same place. The default can be saved to the account; a background is explicitly a preference for this device and conversation.\n\nApp connection settings identify the selected account and access state. Tool permissions describe the operations available to the assistant. Owner approval and private or group policies can add separate restrictions. Read the saved state rather than assuming a checkbox or coloured indicator tells the whole story."
+      ],
+      [
+        "Day four: use a connected app",
+        "Open a relevant app alongside the assistant. In Docs, identify the actual document before asking for a review. In Email, check the active mailbox before drafting. In Calendar, confirm the time zone and destination calendar before creating a booking.\n\nUse the smallest tool access that supports the intended workflow. After an authorised change, inspect the actual destination. A saved draft, a sent message and a delivered reply are different outcomes."
+      ],
+      [
+        "Day five: review voice and funding separately",
+        "A voice catalogue, an activated profile and a ready live conversation are different stages. If activation fails, read the service error at that stage rather than immediately changing microphone permissions. Only a live session introduces the actual microphone and remote-audio exchange.\n\nLikewise, a Wallet balance in the profile is a summary, not a complete explanation of service readiness. Inspect the intended account, credit lots and transaction history when investigating funding. Reconcile an uncertain payment before starting another checkout."
+      ],
+      [
+        "End the week with a repeatable method",
+        "Write down a small procedure that produced a useful result. Include the source of truth, the action, the scope and the evidence of completion. The public Sidekick library provides examples you can read and adapt to the tools you actually have.\n\nThe Cortex documentation now includes more than 100 Chat task guides and a visual settings tour. Screenshots use the real local interface with fictional test accounts and simulated service states; they explain controls without exposing customer information or pretending that a demo is a live integration test."
+      ]
+    ],
+    "links": [
+      [
+        "Browse the Cortex Chat guides",
+        "https://fulcrumcortex.github.io/documentation/cortex-chat/"
+      ],
+      [
+        "See the Wallet walkthrough",
+        "https://fulcrumcortex.github.io/documentation/cortex-chat/wallet-and-billing/"
+      ],
+      [
+        "Explore the Fulcrum suite",
+        "https://fulcrumcortex.github.io/suite/"
+      ]
+    ]
+  }
+]
