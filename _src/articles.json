@@ -23,7 +23,7 @@
       ],
       [
         "Try one focused skill",
-        "The public Fulcrum starter library contains 17 skills across nine roles. It covers coordination, software changes, releases, CRM follow-up and cleanup, voice-agent preparation, call review, inbox work, bookings, meeting actions, documents, file sharing, Wallet checks, campaigns, delivery planning, CAD briefs and private-message drafts.\n\nStart with one task you can judge. Read its SKILL.md, supply the relevant context and ask for a result you can verify. The library\u2019s Fulcrum Code marketplace installation and discovery were tested in an isolated environment. That packaging test does not claim that every reader\u2019s CRM, calling or payment connection is already configured."
+        "The public Fulcrum starter library contains 17 skills across nine roles. It covers coordination, software changes, releases, CRM follow-up and cleanup, voice-agent preparation, call review, inbox work, bookings, meeting actions, documents, file sharing, Wallet checks, campaigns, delivery planning, CAD briefs and private-message drafts.\n\nStart with one task you can judge. Read its SKILL.md, supply the relevant context and ask for a result you can verify. Install the library through the Fulcrum Code marketplace, then use /skills to find a procedure for your task."
       ]
     ],
     "links": [
